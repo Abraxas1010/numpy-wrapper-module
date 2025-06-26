@@ -34,3 +34,13 @@ class NumpyWrapper:
 
         # Return the array as a string to make it JSON-serializable
         return np.array_str(arr)
+
+    @function
+    def matrix_multiply(self) -> str:
+        """
+        Creates and multiplies two 3x3 matrices and returns the result as a string.
+        """
+        matrix_a = np.arange(9).reshape(3, 3)
+        matrix_b = np.arange(9).reshape(3, 3)
+        result = np.matmul(matrix_a, matrix_b)
+        return np.array_str(result)
