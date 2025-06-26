@@ -1,0 +1,12 @@
+{
+  "name": "numpy-wrapper",
+  "engineVersion": "v0.18.11",
+  "sdk": {
+    "source": "python"
+  },
+  "exclude": [
+    ".venv",
+    "**/__pycache__",
+    ".pytest_cache"
+  ]
+}
